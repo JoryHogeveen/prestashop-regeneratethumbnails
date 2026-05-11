@@ -1,0 +1,22 @@
+{
+  "name": "keraweb/regeneratethumbnails",
+  "description": "Module CLI command to regenerate PrestaShop thumbnails.",
+  "type": "prestashop-module",
+  "license": "AFL-3.0",
+  "authors": [
+    {
+      "name": "Keraweb"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PrestaShop\\Module\\Regeneratethumbnails\\": "src/"
+    }
+  },
+  "config": {
+    "prepend-autoloader": false
+  },
+  "require": {
+    "php": ">=8.0"
+  }
+}

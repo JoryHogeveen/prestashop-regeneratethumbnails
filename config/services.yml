@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    public: true
+
+  PrestaShop\Module\Regeneratethumbnails\Command\RegenerateThumbnailsConsoleCommand:
+    arguments:
+      - '@prestashop.core.command_bus'
+      - '@prestashop.adapter.legacy.context'
+      - '@PrestaShopBundle\Entity\Repository\ImageTypeRepository'
+    tags:
+      - 'console.command'
+
