@@ -23,6 +23,7 @@ class ComposerStaticInit8b22a3ce6aadbd605c2b6f8495d3eb02
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'PrestaShop\\Module\\Regeneratethumbnails\\Command\\RegenerateThumbnailsConsoleCommand' => __DIR__ . '/../..' . '/src/Command/RegenerateThumbnailsConsoleCommand.php',
+        'PrestaShop\\Module\\Regeneratethumbnails\\Service\\ThumbnailBatchRegenerator' => __DIR__ . '/../..' . '/src/Service/ThumbnailBatchRegenerator.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

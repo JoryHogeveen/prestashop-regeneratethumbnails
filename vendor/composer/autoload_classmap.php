@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'PrestaShop\\Module\\Regeneratethumbnails\\Command\\RegenerateThumbnailsConsoleCommand' => $baseDir . '/src/Command/RegenerateThumbnailsConsoleCommand.php',
+    'PrestaShop\\Module\\Regeneratethumbnails\\Service\\ThumbnailBatchRegenerator' => $baseDir . '/src/Service/ThumbnailBatchRegenerator.php',
 );

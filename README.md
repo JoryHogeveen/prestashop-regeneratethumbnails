@@ -1,6 +1,17 @@
 # RegenerateThumbnails
 
-Module-owned thumbnail regeneration command for PrestaShop.
+Module-owned thumbnail regeneration tools for PrestaShop.
+
+## Admin batch tool (AJAX)
+
+In Back Office, open this module configuration page to use the built-in batch UI.
+
+- Select scope and image type filters
+- Optional erase of previous generated thumbs
+- Choose batch size per AJAX request
+- Start and monitor progress bar/log output
+
+This mode processes thumbnails in small requests instead of one long request, which helps prevent server timeouts.
 
 ## Symfony command (auto-registered)
 

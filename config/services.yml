@@ -2,6 +2,12 @@ services:
   _defaults:
     public: true
 
+  PrestaShop\Module\Regeneratethumbnails\Service\ThumbnailBatchRegenerator:
+    arguments:
+      - '@PrestaShopBundle\Entity\Repository\ImageTypeRepository'
+      - '@PrestaShop\PrestaShop\Adapter\ImageThumbnailsRegenerator'
+      - '@PrestaShop\PrestaShop\Core\Image\ImageFormatConfiguration'
+
   PrestaShop\Module\Regeneratethumbnails\Command\RegenerateThumbnailsConsoleCommand:
     arguments:
       - '@prestashop.core.command_bus'
@@ -9,4 +15,3 @@ services:
       - '@PrestaShopBundle\Entity\Repository\ImageTypeRepository'
     tags:
       - 'console.command'
-
