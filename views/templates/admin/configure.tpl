@@ -1,5 +1,5 @@
 <div id="regeneratethumbnails-batch-tool" class="panel" data-ajax-url="{$ajax_url|escape:'html':'UTF-8'}">
-  <h3>Batch thumbnail regeneration</h3>
+  <div class="panel-heading">Batch thumbnail regeneration</div>
   <p>Process thumbnails in AJAX batches to avoid server timeouts.</p>
 
   <div class="form-group">
